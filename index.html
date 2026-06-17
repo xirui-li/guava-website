@@ -136,8 +136,12 @@
         <figcaption>pick up the orange</figcaption>
       </figure>
       <figure class="media">
-        <video src="videos/push_cereal_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
-        <figcaption>push cereal box to the left</figcaption>
+        <video src="videos/hotdog_near_donut_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <figcaption>move the hotdog near the donut</figcaption>
+      </figure>
+      <figure class="media">
+        <video src="videos/cube_under_cup_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <figcaption>pick up the hidden cube under the cup</figcaption>
       </figure>
 
       <figure class="media">
@@ -149,12 +153,13 @@
         <figcaption>remove the red cube from the tray</figcaption>
       </figure>
       <figure class="media">
-        <video src="videos/cube_under_cup_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
-        <figcaption>pick up the hidden cube under the cup</figcaption>
+        <video src="videos/push_cereal_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <figcaption>push cereal box to the left</figcaption>
       </figure>
+
       <figure class="media">
-        <video src="videos/hotdog_near_donut_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
-        <figcaption>move the hotdog near the donut</figcaption>
+        <video src="videos/open_drawer_sim.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <figcaption>open drawer</figcaption>
       </figure>
     </div>
   </section>
@@ -235,7 +240,7 @@
     <h3 class="sub-title">RL fine-tuning</h3>
     <div class="text-media-row">
       <p>
-        We further finetune Guava-Agent-4B with GRPO on the two challenging long-horizon manipulation tasks that require substantially more multi-step reasoning, error recovery, and action planning. While the SFT policy struggles on both shell game (6.7%) and place all red objects in basket (0.0%), RL fine-tuning improves performance to 60.0% and 93.3%, respectively. The large gains suggest that training on challenging long-horizon tasks with sparse success rewards effectively strengthens recovery behaviors and enables the policy to better handle off-trajectory states.
+        We further finetune Guava-Agent-4B with GRPO on the two challenging, OOD long-horizon manipulation tasks that require substantially more multi-step reasoning, error recovery, and action planning. While the SFT policy struggles on both shell game (6.7%) and place all red objects in basket (0.0%), RL fine-tuning improves performance to 60.0% and 93.3%, respectively. The large gains suggest that training on challenging long-horizon tasks with sparse success rewards effectively strengthens recovery behaviors and enables the policy to better handle off-trajectory states.
       </p>
       <figure class="media">
         <img src="images/sft_vs_rl.png" alt="Comparison of SFT vs RL fine-tuning success rates on long-horizon tasks." />
