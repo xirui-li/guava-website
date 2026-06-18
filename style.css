@@ -605,6 +605,27 @@ a.cite:hover { text-decoration: underline; }
 .placeholder .kicker { margin-bottom: 8px; }
 .placeholder p { margin: 0; font-size: 16px; }
 
+/* ---------- bibtex code block ---------- */
+.bibtex-block {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 20px 22px;
+  margin: 0;
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--ink);
+  white-space: pre;
+}
+.bibtex-block code {
+  font: inherit;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
 /* ---------- footer ---------- */
 .footer {
   border-top: 1px solid var(--rule);
