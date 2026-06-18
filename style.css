@@ -212,29 +212,65 @@ a:hover { border-bottom-color: var(--accent); }
   transform: translateY(-1px);
   border-bottom-color: var(--ink);
 }
-.btn-primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  border-bottom-color: var(--accent);
+/* Hero button color story — left to right:
+   Paper #60a61f  arXiv #f5ee9b  Code #faa685  BibTeX #fba3ae */
+.btn-paper {
+  background: #60a61f;
+  color: #fff;
+  border-color: #60a61f;
+  border-bottom-color: #60a61f;
 }
-.btn-primary:hover {
-  background: #235f3e;
-  border-bottom-color: #235f3e;
+.btn-paper:hover {
+  background: #4f8c19;
+  color: #fff;
+  border-color: #4f8c19;
+  border-bottom-color: #4f8c19;
 }
+
 .btn-arxiv {
-  background: #c1de79;
+  background: #f5ee9b;
   color: var(--ink);
-  border-color: #c1de79;
-  border-bottom-color: #c1de79;
+  border-color: #f5ee9b;
+  border-bottom-color: #f5ee9b;
 }
 .btn-arxiv:hover {
-  background: #aecc65;
+  background: #e8db75;
   color: var(--ink);
-  border-color: #aecc65;
-  border-bottom-color: #aecc65;
+  border-color: #e8db75;
+  border-bottom-color: #e8db75;
 }
-.btn-arxiv .btn-ico {
-  background: rgba(20, 22, 26, 0.12);
+
+.btn-code {
+  background: #faa685;
+  color: var(--ink);
+  border-color: #faa685;
+  border-bottom-color: #faa685;
+}
+.btn-code:hover {
+  background: #f78f63;
+  color: var(--ink);
+  border-color: #f78f63;
+  border-bottom-color: #f78f63;
+}
+
+.btn-bibtex {
+  background: #fba3ae;
+  color: var(--ink);
+  border-color: #fba3ae;
+  border-bottom-color: #fba3ae;
+}
+.btn-bibtex:hover {
+  background: #f9869a;
+  color: var(--ink);
+  border-color: #f9869a;
+  border-bottom-color: #f9869a;
+}
+
+/* Icon chip inside light-colored buttons: dark overlay for contrast. */
+.btn-arxiv .btn-ico,
+.btn-code .btn-ico,
+.btn-bibtex .btn-ico {
+  background: rgba(20, 22, 26, 0.14);
   color: var(--ink);
 }
 .btn[aria-disabled="true"] {
